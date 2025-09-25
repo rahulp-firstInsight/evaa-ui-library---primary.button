@@ -1,0 +1,93 @@
+.custom-button {
+  align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 20px;
+  height: 49px;
+  padding: 16px 20px 16px 32px;
+  position: relative;
+
+  .text-wrapper {
+    color: #ffffff;
+    font-family: "Wix Madefor Display", Helvetica;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 17px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  .icon-arrows {
+    height: 27.83px;
+    margin-bottom: -5.42px;
+    margin-top: -5.42px;
+    position: relative;
+    width: 27.8px;
+  }
+
+  &.clicked {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.47) 0%,
+        rgba(0, 0, 0, 0.47) 100%
+      ),
+      linear-gradient(0deg, rgba(236, 64, 122, 1) 0%, rgba(236, 64, 122, 1) 100%);
+    top: 92px;
+  }
+
+  &.disabled {
+    background-color: #8d8a8b;
+    top: 235px;
+  }
+
+  &.hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.47) 0%,
+        rgba(255, 255, 255, 0.47) 100%
+      ),
+      linear-gradient(0deg, rgba(236, 64, 122, 1) 0%, rgba(236, 64, 122, 1) 100%);
+    top: 164px;
+  }
+
+  &.default {
+    background-color: #ec407a;
+    top: 20px;
+  }
+
+  &.hover.with-icon-true {
+    left: 247px;
+  }
+
+  &.hover.with-icon-false {
+    left: 21px;
+  }
+
+  &.with-icon-false.clicked {
+    left: 21px;
+  }
+
+  &.with-icon-true.clicked {
+    left: 247px;
+  }
+
+  &.with-icon-false.default {
+    left: 20px;
+  }
+
+  &.default.with-icon-true {
+    left: 246px;
+  }
+
+  &.with-icon-false.disabled {
+    left: 21px;
+  }
+
+  &.with-icon-true.disabled {
+    left: 247px;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./primarybutton.scss";
+import "./CustomButton.scss";
 
 interface Props {
   hasIcon: boolean;
@@ -10,7 +10,7 @@ interface Props {
   className: any;
 }
 
-export const PrimaryButton = ({
+export const CustomButton = ({
   hasIcon = true,
   buttonLabel = "Roboto",
   hasLabel = true,
@@ -20,7 +20,7 @@ export const PrimaryButton = ({
 }: Props): JSX.Element => {
   return (
     <div
-      className={`primary-button ${state} with-icon-${withIcon} ${className}`}
+      className={`custom-button ${state} with-icon-${withIcon} ${className}`}
     >
       {hasLabel && <div className="text-wrapper">Book Appointment</div>}
 
